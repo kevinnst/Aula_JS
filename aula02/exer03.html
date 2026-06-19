@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- TAG DO MEU SITE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é uma pagina modelo">
+    <meta name="keywords" content="sites,web desenvolvimento backend">
+    <meta name="author" content="kevin">
+    <title>HOME: Titulo Principal</title>
+
+</head>
+
+<body>
+    <h1>Manipulando Imagens do HTML através do JS - DESAFIO 01</h1>
+
+    <div>
+        <img width="10%" src="img/Neymar.jpg" alt="">
+    </div>
+    <button onclick="trocar_img()">Trocar de Imagem</button>
+    <script>
+        function trocar_img() {
+            const tags_src = document.getElementsByTagName("img")
+            console.log(tags_src)
+            let tags_src_1 = tags_src[0]
+            console.log(tags_src_1)
+            tags_src_1.src = "img/Nike.jpg"
+        }
+
+    </script>
+
+</body>
+
+</html>
