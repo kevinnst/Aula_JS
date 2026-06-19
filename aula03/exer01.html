@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- TAG DO MEU SITE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esse é uma pagina modelo">
+    <meta name="keywords" content="sites,web desenvolvimento backend">
+    <meta name="author" content="kevin">
+    <title>HOME: Titulo Principal</title>
+
+</head>
+<body>
+    <h1><mark>INTEGRAÇÃO JS COM FORMS</mark> DO HTML</h1>
+    <br>
+    <input type="button"onclick="tristeza()" value="Feliz">
+    <input type="button"onclick="Feliz()" value="Triste">
+    <img src="img/download (1).jpg" id="Rosto" style="" width="350px">
+    <script>
+        function tristeza() {
+            let img = document.getElementById("Rosto");
+            img.src = "img/emoticon-1610573_1280.png";
+        }
+
+        function Feliz() {
+            let img = document.getElementById("Rosto");
+            img.src = "img/download (1).jpg";
+        }
+    </script>
+
+</body>
+
+</html>
