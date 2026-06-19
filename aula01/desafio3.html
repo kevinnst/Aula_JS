@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <title>desafio3</title>
+    <meta name="description" content="Pagina Modelo">
+    <meta name="keyword" content="sites,web,desenvolvimento">
+    <meta name="author" content="Kevin">
+</head>
+
+<body>
+     <h1>Ola Mundo em JS: <mark>Alert</mark></h1>
+    <br>
+    <h2 id="num1"></h2>
+    <h2 id="num2"></h2>
+    <h2 id="operacao"></h2>
+
+    <h2 id="resultado"></h2>
+
+    <script>
+        window.alert("Seja bem vindo ao meu site");
+        let n1 = window.prompt("Digite o primeiro número:");
+        let n2 = window.prompt("Digite o segundo número:");
+        let op = window.prompt("Digite a operação (+ ou -):");
+        let resultado = 0;
+
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
+
+        if (op === "+") {
+            resultado = n1 + n2;
+        } else if (op === "-") {
+            resultado = n1 - n2;
+        }
+
+        document.getElementById("resultado").innerText = "Resultado: " + resultado;
+    </script>
+
+</body>
+
+</html>

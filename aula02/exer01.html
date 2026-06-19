@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="favicon.jpg">
+    <title>EXERCICIO 02 - JAVASCRIPT</title>
+    <meta name="description" content=" Conteudo das aulas JS">
+    <meta name="keyword" content="sites,web,frontend">
+    <meta name="author" content="kevin">
+    <style>
+        p{
+            background-color: rgb(22, 9, 141);
+            color: rgb(247, 253, 255);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><mark> MANIPULANDO ELEMENTOS (TAGS)</mark> DO HTML ATRAVES DO JS</h1>
+    <hr>
+
+    <div>
+        <p>ESTAMOS APRENDENDO JAVASCRIPT</p>
+        <hr>
+        <p> Aprender é Muito lega</p>
+        <p>E para ajudar o aprendizado, é PRECISO  praticar e exercitar</p>
+    </div>    
+    <script>
+        const tags_p = document.getElementsByTagName('p')
+        console.log(tags_p);
+        let tag_p_1 = tags_p[0];
+        console.log(tag_p_1);
+        tag_p_1.style.background="purple"
+        tag_p_1.style.color="white"
+
+        tag_p_2.style.textAlign="center";
+        tag_p_2.style.fontSize="30pt";
+
+        tag_p_3style.background = "blue";
+        tag_p_3.style.color = "white";
+    </script>
+
+</body>
+</html>
